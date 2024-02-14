@@ -7,6 +7,50 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <!-- Player information -->
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Content="Player Status" Background="Cyan"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Player Image" Background="Blue"/>
+        </Grid>
+
+        <!-- Location and enemy information -->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Location Information" Background="Cyan"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Information" Background="Blue"/>
+        </Grid>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" Background="AliceBlue"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game message" Background="ForestGreen"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quest" Background="BurlyWood"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Item information and action" Background="DimGray"/>
+        <Label Grid.Row="2" Grid.Column="2" Content="navigation buttons" Background="RosyBrown"/>
+        
     </Grid>
 </Window>
